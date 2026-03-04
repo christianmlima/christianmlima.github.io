@@ -1,14 +1,25 @@
 /* Theme */
 
+:root{
+	--theme-bg: #303F9F;
+	--theme-foreground: #FAFAFA;
+	--accent: #ffca28;
+}
+
 main {
-	background: #303F9F;
-	color: #FAFAFA;
+	background: var(--theme-bg);
+	color: var(--theme-foreground);
 }
 
 .icons-social a {
-	color: #FAFAFA;
+	color: var(--theme-foreground);
+}
+
+.icons-social a:hover,
+.icons-social a:focus{
+	color: var(--accent);
 }
 
 .icons-social a svg path{
-	fill: #FAFAFA;
+	fill: var(--theme-foreground);
 }
